@@ -53,3 +53,32 @@ OUTPUT:
   AAPL                 89  51.7%  47.2%  22.5%    59.4%    56.7%    18.2
   SPY                  89  54.5%  50.6%  25.8%    62.1%    59.4%    12.8
 ══════════════════════════════════════════════════════════════════
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+shift(1) is the right way to compute PDH/PDL — it maps each day's high/low to the following day's record with zero look-ahead. Getting this wrong (using the same day's levels) is a data leakage bug that produces unrealistically high hit rates
+
+
+The noise buffer (0.005%) is non-trivial. Without it, a 1-tick wick that touches exactly the level counts as a "sweep." In real trading, a 1-pip wick doesn't raid meaningful stop clusters — you need at least a small excursion beyond the level
+
+
+Weekday patterns are real — Tuesday consistently shows higher sweep rates across instruments. The mechanism is structural: Monday often sets up the weekly range, and Tuesday delivers into the liquidity that formed during Monday's consolidation
+
+
+Both swept (25%) is higher than most traders expect. Price frequently sweeps both PDH and PDL within the same session before making its directional move — this is the classic "stop raid on both sides" that ICT calls the "manipulation phase"
