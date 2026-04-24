@@ -82,3 +82,10 @@ Weekday patterns are real — Tuesday consistently shows higher sweep rates acro
 
 
 Both swept (25%) is higher than most traders expect. Price frequently sweeps both PDH and PDL within the same session before making its directional move — this is the classic "stop raid on both sides" that ICT calls the "manipulation phase"
+
+
+
+
+
+
+works fine on forex market and various currency pairs 
