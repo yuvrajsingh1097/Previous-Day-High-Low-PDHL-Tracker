@@ -89,3 +89,8 @@ Both swept (25%) is higher than most traders expect. Price frequently sweeps bot
 
 
 works fine on forex market and various currency pairs 
+
+
+
+
+MARK ASIAN LOWS AND HIGHS THEN LONDON HIGHS AND LOWS AND THEN TRADE IN NY SESSION WITH PROPER SETUP
